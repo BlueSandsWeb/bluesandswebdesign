@@ -1,0 +1,214 @@
+* {
+  /*border: 1px solid red; */
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+/* ========== Logo Bar ========== */
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 150px;
+    border-bottom: 3px solid gray;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+  }
+
+  .logoArea img {
+    height: 150px;
+  }
+
+  #name {
+    font-size: 5rem;
+    font-family: var(--evo-light-font);
+  }
+
+  #showMenuBtn {
+    cursor: pointer;
+    height: 100%;
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  #showMenuBtn img {
+    cursor: pointer;
+  }
+
+  #showMenuIcon {
+    height: 70%;
+    cursor: pointer;
+  }
+
+/* ========== Slide In Nav Bar ========== */
+
+  nav {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #323232;
+    height: 100vh;
+    width: 100vw;
+    padding: 15vh 15vw;
+    top: 0;
+    bottom: 0;
+    right: -100vw;
+    z-index: 100;
+  }
+
+  .sidebarLinks {
+    color: white;
+    padding: calc((1/7)100)vh;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #555;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vh 0;
+  }
+
+  #menuCloseBtn {
+    background-color: tomato;
+  }
+
+/* ========== Media Queries ========== */
+  @media (max-width: 1320px) {
+    header {
+      height: 100px;
+    }
+
+    .logoArea img {
+      height: 100px;
+    }
+
+    #name {
+    font-size: 3rem;
+    }
+
+    #showMenuBtn {
+      width: 100px;
+    }
+
+    #showMenuIcon {
+      height: 50px;
+    }
+
+  }
+
+  @media (min-width: 920px) {
+    .sidebarLinks {
+      width: 30vw;
+    }
+  }
+
+  @media (max-width: 920px) {
+    #name {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+  }
+/*  HERE IS WHERE I'M WORKING CURRENTLY*/
+  @media (max-width: 810px) {
+    
+    header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+
+    .logoArea img {
+      margin-top: 40px;
+    }
+
+    #showMenuBtn {
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      border-top: 3px solid gray;
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+  }
+
+  @media (max-width: 590px) {
+    #name {
+      font-size: 1.9rem;
+    }
+
+    .logoArea img {
+      height: 100px;
+      margin-top: 30px;
+    }
+
+    #showMenuBtn {
+      height: 75px;
+    }
+
+    #showMenuIcon {
+      height: 70%;
+    }
+
+  }
+
+  @media (max-width: 500px) {
+    #name {
+      font-size: 1.75rem;
+    }
+
+    .logoArea img {
+      height: 75px;
+      margin-top: 20px;
+    }
+
+    #showMenuBtn {
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    #name {
+      font-size: 1.5rem;
+    }
+  }

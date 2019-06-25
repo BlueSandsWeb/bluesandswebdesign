@@ -1,0 +1,53 @@
+:root {
+  --evo-light-font: 'made_evolve_sans_evoregular', 'Raleway', sans-serif;
+  --heading-font: 'Raleway', 'Ubuntu', sans-serif;
+  --general-font: 'Ubuntu', sans-serif;
+  --box-shadow: 0 10px 20px 0 rgba(0,0,0,.3);
+  --bswd-blue: #039DEC;
+}
+
+* {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--general-font); 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.875rem;
+  font-weight: 100;
+}
+
+a {
+  cursor: pointer;
+}
+
+.link {
+  color: var(--bswd-blue);
+}
+
+.button {
+  background-color: #478ac8;
+  border: 3px solid #478ac8;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 1.25rem;
+  font-family: var(--evo-light-font);
+}
+
+.button:hover {
+  background-color: white;
+  color: #478ac8;
+}
