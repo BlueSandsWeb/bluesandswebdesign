@@ -25,8 +25,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 150px;
-    border-bottom: 3px solid gray;
+    height: 100px;
+    border-bottom: 3px solid #323232;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -34,11 +34,11 @@
   }
 
   .logoArea img {
-    height: 150px;
+    height: 100px;
   }
 
   #name {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: var(--evo-light-font);
   }
 
@@ -62,7 +62,7 @@
   }
 
   #showMenuIcon {
-    height: 70%;
+    height: 50px;
     cursor: pointer;
   }
 
@@ -79,7 +79,8 @@
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: #323232;
+    background-color: rgba(0,0,0,.90);
+    /* background-color: rgba(255,255,255,.95); */
     height: 100vh;
     width: 100vw;
     padding: 15vh 15vw;
@@ -96,9 +97,12 @@
     font-size: 1.25rem;
     background-color: #555;
     width: 100%;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    padding: 3vh 0;
+    padding: 2.5vh 0;
+    border-radius: 5px;
+    /* box-shadow: 0px 4px 3px black; */
   }
 
   #menuCloseBtn {
