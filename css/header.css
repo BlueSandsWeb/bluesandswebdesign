@@ -26,7 +26,8 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100px;
-    border-bottom: 3px solid #323232;
+    /* border-bottom: 3px solid #323232; */
+    box-shadow: 0px 2px 4px rgba(0,0,0,.5);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
