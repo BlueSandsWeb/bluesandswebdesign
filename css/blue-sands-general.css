@@ -47,6 +47,7 @@ a {
   font-size: 1.25rem;
   font-family: var(--evo-light-font);
   box-shadow: var(--box-shadow);
+  height: max-content;
 }
 
 .button:hover {
